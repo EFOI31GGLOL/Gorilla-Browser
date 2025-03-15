@@ -19,7 +19,7 @@ class GorillaTagBrowser(QMainWindow):
         self.tabs.setStyleSheet("QTabBar::tab { background: black; color: white; padding: 10px; } QTabBar::tab:selected { background: #444; }")
         self.tabs.tabCloseRequested.connect(self.close_tab)
         
-        self.new_tab("https://www.genesis.menu")
+        self.new_tab("https://gorillastore.netlify.app")
 
         self.url_bar = QLineEdit()
         self.url_bar.setPlaceholderText("Search Gorilla Tag mods...")
@@ -40,7 +40,7 @@ class GorillaTagBrowser(QMainWindow):
         
         self.new_tab_button = QPushButton("➕")
         self.new_tab_button.setStyleSheet("padding: 10px; background-color: #444; border-radius: 5px; color: white;")
-        self.new_tab_button.clicked.connect(lambda: self.new_tab("https://www.google.com"))
+        self.new_tab_button.clicked.connect(lambda: self.new_tab("https://gorillastore.netlify.app"))
         
         nav_layout = QHBoxLayout()
         nav_layout.addWidget(self.back_button)
